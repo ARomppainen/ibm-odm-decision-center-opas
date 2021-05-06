@@ -2,46 +2,90 @@
 
 <html lang="fi">
 <head>
-  <meta charset="utf-8">
-
-  <title>IBM ODM Decision Center opas</title>
-  <meta name="author" content="Aleksi Romppainen">
-
-  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
-
+	<meta charset="utf-8">
+	<meta name="author" content="Aleksi Romppainen">
+	<title>IBM ODM Decision Center opas</title>
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
 <body>
-  <h1>Toimintasäännöt (Action Rule)</h1>
-  
-  Säännön rakenne
-  
-  definitions (voidaan jättää pois)
-	sääntökohtaisten muuttujien määrittely
-  if (voidaan jättää pois, tällöin sääntö suoritetaan aina)
-	ehtolause
-  then (ainoa pakollinen osa)
-	toiminnot
+	<h1>Toimintasäännöt (Action Rule)</h1>
+	<h2>Säännön rakenne</h2>
+	<pre>
+  definitions
+    sääntökohtaisten muuttujien määrittely
+  if
+    ehtolause
+  then
+    toiminnot
   else
-	vaihtoehtoiset toiminnot
+    vaihtoehtoiset toiminnot
+	</pre>
 	
-	Täydennysmenu avautuu painamalla Ctrl + Space.
+	<ul>
+		<li><span class="monospace">definitions</span> osio on vapaaehtoinen</li>
+		<li><span class="monospace">if</span> osio on myös vapaaehtoinen, mutta toiminnot suoritetaan aina, jos <span class="monospace">if</span> osio puuttuu.</li>
+		<li><span class="monospace">then</span> osio on pakollinen ja se sisältää suoritettavat toiminnot, jos säännön ehto täyttyy</li>
+		<li><span class="monospace">else</span> osio on vapaaehtoinen ja se sisältää suoritettavat toiminnot, jos säännön ehto ei täyttynyt</li>
+	</ul>
 	
-	Yleisimmät ehtolauseen rakenteet:
+	<h2>Yleisiä ehtolauseen rakenteita</h2>
 	
-	muuttuja is arvo
-	muuttuja is one of { arvo1, arvo2, ... }
+	<table>
+		<thead>
+			<tr>
+				<th>Rakenne</th>
+				<th>Selitys</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="monospace">'muuttuja' is 'arvo'</td>
+				<td>Lorem ipsum</td>
+			</tr>
+			<tr>
+				<td class="monospace">'muuttuja' is one of { arvo1, arvo2, ... }</span>
+				<td>Lorem ipsum</td>
+			</tr>
+			<tr>
+				<td class="monospace">'muuttuja' starts with "merkkijono"</span>
+				<td>Lorem ipsum</td>
+			</tr>
+			<tr>
+				<td class="monospace">'muuttuja' ends with "merkkijono"</span>
+				<td>Lorem ipsum</td>
+			</tr>
+			<tr>
+				<td class="monospace">'muuttuja' is less than 'numeroarvo'</td>
+				<td>Lorem ipsum</td>
+			</tr>
+			<tr>
+				<td class="monospace">'muuttuja' is more than 'numeroarvo'</td>
+				<td>Lorem ipsum</td>
+			</tr>
+			<tr>
+				<td class="monospace">'muuttuja' is at least 'numeroarvo'</td>
+				<td>Lorem ipsum</td>
+			</tr>
+			<tr>
+				<td class="monospace">'muuttuja' is most 'numeroarvo'</td>
+				<td>Lorem ipsum</td>
+			</tr>
+		</tbody>
+	</table>
   
+	<h2>Näppäinkomentoja</h2>
+	<ul>
+		<li>Ctrl + Space avaa täydennysvalikon</li>
+		<li>Ctrl + Shift + F muotoilee säännön ulkoasun</li>
+	</ul>
   
-  <p>Tähän esimerkkivideo, missä luodaan uusi action rule Decision Centerissä</p>
-  <!--
-  <video width="640" height="480" controls>
-	<source src="res/esimerkkivideo.mp4" type="video/mp4">
-	Selaimesi ei tue videoelementtiä
-  </video>
-  -->
+	<h2>Esimerkkivideo, missä luodaan uusi action rule Decision Centerissä</h2>
+	<video width="640" height="480" controls>
+		<source src="res/create_action_rule.mp4" type="video/mp4">
+		Selaimesi ei tue videoelementtiä
+	</video>
   
-  <p><a href="https://www.ibm.com/docs/en/odm/8.10?topic=overriding-action-rules" target="_blank">Lue lisää IBM:n dokumentaatiosta.</a></p>
-  
+	<p><a href="https://www.ibm.com/docs/en/odm/8.10?topic=overriding-action-rules" target="_blank">Lue lisää IBM:n dokumentaatiosta.</a></p>
 </body>
 </html>
