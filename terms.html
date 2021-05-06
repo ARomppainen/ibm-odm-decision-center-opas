@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+
+  <title>IBM ODM Decision Center opas</title>
+  <meta name="author" content="Aleksi Romppainen">
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+</head>
+
+<body>
+  <!--<script src="js/scripts.js"></script>-->
+  
+  <h1>Termistö</h1>
+  
+  <table>
+	<thead>
+		<tr>
+			<th>Termi</th>
+			<th>Selite</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>(Action) Rule</td>
+			<td>Yksittäinen liiketoimintasääntö, mikä sisältää paikallisia muuttujamäärittelyjä (valinnainen osa), ehtolauseita (valinnainen osa) ja toimintoja (pakollinen osa).</td>
+		</tr>
+		<tr>
+			<td>Business Object Model (BOM)</td>
+			<td>Sääntökoneohjelman tarvitsemia luokkamäärityksiä ja dynaamisia arvojoukkoja. Luodaan Rule Designerillä, ei mahdollisuutta muokata Decision Centerissä.</td>
+		</tr>
+		<tr>
+			<td>Branch</td>
+			<td>Sääntökoneohjelman kehityshaara. Pääkehityshaara on nimeltään 'main'. Muutokset muista kehityshaarasta toiseen voidaan yhdistää 'merge' toiminnolla.</td>
+		</tr>
+		<tr>
+			<td>Decision Operation</td>
+			<td>Päätösoperaatioon määritellään syöte- ja tulosmuuttujat ja suoritettavat säännöt. Yhdessä sääntökonepalvelussa voi olla monta päätösoperaatiota.</td>
+		</tr>
+		<tr>
+			<td>Decision Service</td>
+			<td>Sääntökonepalvelu, mikä koostuu yhdestä päätason sääntöprojektista ja mahdollisista aliprojekteista.</td>
+		</tr>
+		<tr>
+			<td>Decision Table</td>
+			<td>Päätöstaulu, muistuttaa Excel-taulukkoa, jokainen rivi on oma liiketoimintasääntö.</td>
+		</tr>
+		<tr>
+			<td>Deployment Configuration</td>
+			<td>Konfiguraatio, minkä avulla sääntökonepalvelu viedään suoritettavaksi ohjelmaksi palvelimelle.</td>
+		</tr>
+		<tr>
+			<td>Dynamic Domain</td>
+			<td>Dynaaminen arvojoukko, mikä määritellään esim. Excel-tiedoston perusteella.</td>
+		</tr>
+		<tr>
+			<td>Execution Object Model (XOM)</td>
+			<td>Räätälöityä ohjelmakoodia (yleensä Java), mihin voidaan viitata BOMin kautta. Luodaan Rule Designerillä, ei mahdollisuutta muokata Decision Centerissä.</td>
+		</tr>
+		<tr>
+			<td>Priority</td>
+			<td>Numeroarvo, mikä määrittää yksittäisen säännön tai sääntötaulun suoritusjärjestyksen suhteessa muihin valittuihin sääntöihin. Mitä pienempi arvo on, sitä myöhemmin sääntö suoritetaan, ja sitä "vahvempi" kyseinen sääntö on.</td>
+		</tr>
+		<tr>
+			<td>Rule Designer</td>
+			<td>Kehittäjän työkalu, käytännössä Eclipse ohjelmointiympäristöön asennettava laajennos.</td>
+		</tr>
+		<tr>
+			<td>Ruleflow</td>
+			<td>Vuokaavio, mikä ohjaa sääntöjen suorittamista.</td>
+		</tr>
+		<tr>
+			<td>Snapshot</td>
+			<td>Sääntökonepalvelun tallennettu tila, voidaan luoda manuaalisesti tai esimerkiksi deploymentin yhteydessä.</td>
+		</tr>
+		<tr>
+			<td>Test Suite</td>
+			<td>Testipaketti yhden päätösoperaation testaamiseksi. Testipaketeissa käytetään Excel-skenaariotiedostoja.</td>
+		</tr>
+		<tr>
+			<td>Variable Set</td>
+			<td>Joukko muuttujia, joita käytetään sääntöohjelmassa. Jokaisella muuttujalla on tekninen nimi, tietotyyppi, verbalisointi ja mahdollinen alkuarvo.</td>
+		</tr>
+		<tr>
+			<td>Verbalization</td>
+			<td>Nimi millä muuttujaan, luokan jäseneen tai funktioon viitataan säännöissä.</td>
+		</tr>
+	</tbody>
+  </table>
+  
+  <!--
+  <video width="640" height="480" controls>
+	<source src="res/Decision Center _ Business Console - Google Chrome 2021-05-05 13-38-17.mp4" type="video/mp4">
+	Selaimesi ei tue videoelementtiä
+  </video>
+  -->
+</body>
+</html>

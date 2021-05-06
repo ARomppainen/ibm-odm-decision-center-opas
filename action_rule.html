@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+
+  <title>IBM ODM Decision Center opas</title>
+  <meta name="author" content="Aleksi Romppainen">
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+</head>
+
+<body>
+  <h1>Toimintasäännöt (Action Rule)</h1>
+  
+  Säännön rakenne
+  
+  definitions (voidaan jättää pois)
+	sääntökohtaisten muuttujien määrittely
+  if (voidaan jättää pois, tällöin sääntö suoritetaan aina)
+	ehtolause
+  then (ainoa pakollinen osa)
+	toiminnot
+  else
+	vaihtoehtoiset toiminnot
+	
+	Täydennysmenu avautuu painamalla Ctrl + Space.
+	
+	Yleisimmät ehtolauseen rakenteet:
+	
+	muuttuja is arvo
+	muuttuja is one of { arvo1, arvo2, ... }
+  
+  
+  <p>Tähän esimerkkivideo, missä luodaan uusi action rule Decision Centerissä</p>
+  <!--
+  <video width="640" height="480" controls>
+	<source src="res/esimerkkivideo.mp4" type="video/mp4">
+	Selaimesi ei tue videoelementtiä
+  </video>
+  -->
+  
+  <p><a href="https://www.ibm.com/docs/en/odm/8.10?topic=overriding-action-rules" target="_blank">Lue lisää IBM:n dokumentaatiosta.</a></p>
+  
+</body>
+</html>
